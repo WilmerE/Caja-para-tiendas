@@ -1,0 +1,147 @@
+@font-face {
+	font-family: HelveticaLTStd-BlkCond;
+	src: url(HelveticaLTStd-BlkCond.otf);
+}
+@font-face {
+	font-family: HelveticaWorld-Regular;
+	src: url(HelveticaWorld-Regular.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	background-color: #e6e6e6;
+}
+h1, h2, h3, h4, h5{
+	font-family: HelveticaLTStd-BlkCond;
+}
+p{
+	font-size: 1rem;
+	font-family: HelveticaWorld-Regular;
+}
+.contenedor{
+	width: 90%;
+	background-color: #fff;
+	box-shadow: 1px 1px 3px #888888;
+	margin: 0 5%;
+}
+/*
+**Overflow: hidden; es muy importante para que tome la altura de cada elemento hijo
+*/
+ul{
+	width: 100%;
+	list-style: none;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	padding: 25px 0 0 5%;
+	overflow: hidden;
+}
+li{
+	width: 30%;
+	margin: 0 2.5% 25px 0;
+	float: left;
+}
+/*
+**================================================ DISEÑO DE CAJAS ================================================
+**
+**================================================ 
+**--------------- DISEÑO DE FONDO ----------------
+**================================================
+*/
+.caja-tamanio{
+	width: 100%;
+	height: 260px;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px #888888;
+}
+.caja-contenido{
+	width: 100%;
+	height: 80%;
+	position: relative;
+}
+.caja-forma{
+	width: 55%;
+	opacity: 0.6;
+	position: absolute;
+	left: 35%;
+	border-left: 60px solid transparent;
+    border-bottom: 208px solid #000;
+}
+.caja-linea-izq{
+	width: 10%;
+	height: 100%;
+	background-color: #000;
+	float: left;
+}
+.caja-foto{
+	width: 90%;
+	float: left;
+}
+.caja-foto>img{
+	width: 100%;
+	height: 208px;
+	object-fit: cover;
+}
+/*
+**================================================ 
+**---------- DISEÑO DE DESCRIPCIONES -------------
+**================================================
+*/
+.caja-descripcion{
+	color: #fff;
+	position: absolute;
+	left: 35%;
+	padding: 8px 15px;
+	opacity: 1;
+}
+.caja-footer{
+	width: 100%;
+	height: 20%;
+}
+.caja-logo{
+	width: 40%;
+	height: 40%;
+	margin: 0 20% 0 40%;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.caja-logo>img{
+	width: 100%;
+	height: 100%;
+}
+i{
+	margin-left: 4%;
+}
+.direccion{
+	text-align: right;
+	margin-top: 5px;
+}
+.telefono{
+	text-align: right;
+	margin-top: 8px;
+}
+.enlace{
+	text-align: right;
+	margin-top: 12px;
+}
+.enlace>a{
+	padding: 2px 6px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	text-decoration:none;
+}
+/*
+**================================================ 
+**-------------- DISEÑO DE FOOTER ----------------
+**================================================
+*/
+.caja-footer{
+	text-align: center;
+	color: #000;
+}
+.caja-footer>h3{
+	text-transform: uppercase;
+}
